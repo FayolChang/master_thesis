@@ -1,0 +1,1183 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass ctex-book
+\use_default_options true
+\master master.lyx
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+文献综述
+\end_layout
+
+\begin_layout Section
+概念界定
+\end_layout
+
+\begin_layout Standard
+财务危机，相似的概念有财务困境和财务失败，对应的英文关键词往往是Financial Crisis 和 Fincancial Distress，和Financia
+l Failure。对于财务危机，国内外目前没有一种权威的界定标准。如
+\begin_inset CommandInset citation
+LatexCommand cite
+key "beaver1966financial"
+
+\end_inset
+
+将破产、拖欠优先股、银行透支和不能偿付债券定义为财务危机。Gibson 和 Frishkoff 的观点是“财务失败有各种各样的标准，这个词的含义要根据所设的标准
+而定”。由于企业的财务危机轻重不同，从暂时的资金周转困难到破产，企业的财务状况可能处于这两者之间的任意位置。由于财务危机的界定困难，很多学者倾向于找一个明显的标
+志来定义财务危机，比如破产。如Altman认为
+\begin_inset CommandInset citation
+LatexCommand cite
+key "altman1968financial"
+
+\end_inset
+
+，财务危机包含四种情形：经营失败，无力偿付，违约和破产。并且认为只有进入破产程序的企业才能划入财务危机企业。类似的研究有
+\begin_inset CommandInset citation
+LatexCommand cite
+key "deakin1972discriminant"
+
+\end_inset
+
+、
+\begin_inset CommandInset citation
+LatexCommand cite
+key "casey1985using"
+
+\end_inset
+
+、
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gentry1985classifying"
+
+\end_inset
+
+、
+\begin_inset CommandInset citation
+LatexCommand cite
+key "aziz1988bankruptcy"
+
+\end_inset
+
+、
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gilbert1990predicting"
+
+\end_inset
+
+、
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hauser2011predicting"
+
+\end_inset
+
+、
+\begin_inset CommandInset citation
+LatexCommand cite
+key "alkhatib2011predicting"
+
+\end_inset
+
+以及
+\begin_inset CommandInset citation
+LatexCommand cite
+key "abdipoor2013integrating"
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Standard
+然而，除了破产外，财务危机还有多种表现形态。也就是说，财务危机可能导致破产，也可能采取一系列措施后度过难关。许多学者扩大了样本选择范围。
+\begin_inset CommandInset citation
+LatexCommand cite
+key "carmichael1973the"
+
+\end_inset
+
+认为企业面临经营困境时容易导致财务危机，其表现为流动性不足、权益不足、资金不足和债务拖欠。
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Scott1981theprobability"
+
+\end_inset
+
+认为，以债信不足或债权到期无法偿本还息定义财务危机比较合适。
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lau1987five"
+
+\end_inset
+
+将财务困境分为5个阶段：财务稳定阶段、不支付股息或较上年少40%以上、对债务进行技术性违约或者无力偿债、申请破产保护和清算以及破产。
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "altman1993corporate"
+
+\end_inset
+
+总结出四种表现来定义财务困境：经营失败、无偿付能力、技术违约和法律违约、破产。
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "morris1997early"
+
+\end_inset
+
+列出了 12 条企业陷入财务困境的标志,其严重程度依次递减, 它们分别是 :(1)债权人申请破产清算,企业自愿申请破产清算或者被指定接收 者完全接收;(2)公司
+股票在交易所被停止交易 ;(3)针对持续经营,会计师出 具了保留意见 ;(4)与债权人发生债务重组 ;(5)债权人寻求资产保全 ;(6)违 反债券契约,公司债券
+评级或信用评级下降,或发生了针对公司财产或董事的诉 讼;(7)公司进行重组 ;(8)重新指定董事,或者公司聘请公司诊断师对企业进 行诊断;(9)被接管;(10)
+公司关闭或出售其部分产业 ;(11)减少或未能分配 股利;(12)公司股票的相对市场价格出现下降。
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ross2002corporate"
+
+\end_inset
+
+进一步从四个方面定义财务困境：(1)企业失败，即企业清算后仍不能支付债权人的债务；（2）法定破产，即企业和债权人向法院申请破产；（3）技术破产，即企业无法按期履
+行债务合同还本付息；（4）会计破产， 即企业账面净资产出现负数，资不抵债。 
+\end_layout
+
+\begin_layout Standard
+（2）国内文献的界定
+\end_layout
+
+\begin_layout Standard
+在国内，即使发生财务困境，上市公司也很少出现申请破产或者被破产清算的情况，因此将破产定为财务危机的标志是不合适的。国内对企业财务危机的研究多侧重于规范研究。我国
+学者一般以上市公司中因财务状况异常而被特别处理(ST)作为界定财务危机的标志。由于大多数被ST的公司的财务状况符合财务危机的特征，且ST公司指标直观、明确，避免
+了主观随意性。有不少学者经过对财务指标数据的分析，发现正常的公司和ST公司之间存在明显差异。这也说明将公司是否被特别处理是公司是否陷入困境的一个良好指标。国内研
+究财务困境指标的主要有
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhou1996financial"
+
+\end_inset
+
+、
+\begin_inset CommandInset citation
+LatexCommand cite
+key "chen1999corporate"
+
+\end_inset
+
+、
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhang2000financial"
+
+\end_inset
+
+、
+\begin_inset CommandInset citation
+LatexCommand cite
+key "chen2000china"
+
+\end_inset
+
+、
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wu2001china"
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Standard
+大多数学者将财务危机定义为一个过程，既包括轻微的财务困难，也包括极端的破产清算以及介于两者之间的各种情况。如
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gu1999financial"
+
+\end_inset
+
+将财务危机定义为企业无力支付到期债务及费用的一种经济现象。
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhang2000financial"
+
+\end_inset
+
+、
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lv2004corporate"
+
+\end_inset
+
+提出财务困境主要是指同 时满足两个条件：一是连续两年流动比率小于1；二是这两年之中至少有一年营 业利润小于零。他们认为我国上市公司的间接财务成本显著为正,资本结
+构对财务困境间接成本具有显著影响。
+\end_layout
+
+\begin_layout Standard
+本文采用
+\end_layout
+
+\begin_layout Section
+指标选取
+\end_layout
+
+\begin_layout Standard
+各学者在进行财务困境预测时，他们依据自己的经验，选择的指标不尽相同。例如，
+\begin_inset CommandInset citation
+LatexCommand cite
+key "beaver1966financial"
+
+\end_inset
+
+选择了5个财务比率:净收入/资产、资产负债率、现金流/负债、流动资产/流动负债、营运资本/总资产进行一元判定预测。
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ohlson1980financial"
+
+\end_inset
+
+
+\noun on
+则选择了9个变量，其中一个是企业规模，其他8个是财务指标。
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dambolena1980ratio"
+
+\end_inset
+
+则选择了19个指标，并把这些指标分成了4类。这些指标是在综合了46家公司得出的。
+\begin_inset CommandInset citation
+LatexCommand cite
+key "barniv2002predicting"
+
+\end_inset
+
+选择了10个指标，其中有5个非财务变量指标。国内
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jiang2002corporate"
+
+\end_inset
+
+认为模型中加入股权集中系数能提高预测准确率。
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhang2005corporate"
+
+\end_inset
+
+发现财务指标对预测1年的效果较好，而更长时期，如2-3年，则加入非财务指标(现金管理)效果更加。
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cao2007base"
+
+\end_inset
+
+则发现了非财务变量董事会治理变量能提高预测准确率。
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2009corporate"
+
+\end_inset
+
+则在他的博士论文中，通过对2002-2008年国内外118篇财务预警相关文献的总结，详细列出了相关研究中对最终预测模型有显著贡献的变量(见其56页表3.1)。
+\end_layout
+
+\begin_layout Standard
+近来，也有不少学者引入相对效率作为预测变量之一。通常认为，财务困境的企业往往管理不善，而运营效率是反映管理水平的一个重要指标。
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xu2009financial"
+
+\end_inset
+
+将 DEA 相对效率值引入其财务预警模型，发现能够提高预测准确度。类似的研究有 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "yeh2010hybrid"
+
+\end_inset
+
+、
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Li2014Chinese"
+
+\end_inset
+
+、
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xu2009small"
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+总之，目前研究者多数采用财务变量，通过加入一些非财务变量，可能对模型的预测准确度有帮助。
+\end_layout
+
+\begin_layout Standard
+但是，以上的变量选择大多数是根据研究者自己的研究经验。也有一些学者使用粗糙集(rough set)，来进行变量选择。这种方法能在尽量不降低预测准确度的情况下，大
+幅度减少预测变量的数目，使得模型保持简单。具体请参见 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ahn2000integrated"
+
+\end_inset
+
+ 、
+\begin_inset CommandInset citation
+LatexCommand cite
+key "beynon2001variable"
+
+\end_inset
+
+、
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dimitras1999business"
+
+\end_inset
+
+和
+\begin_inset CommandInset citation
+LatexCommand cite
+key "yeh2010hybrid"
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Section
+研究方法
+\end_layout
+
+\begin_layout Standard
+从20世纪30年代开始，西方学者就开始研究企业破产。到目前为止，已经有许多比较成熟的工具和方法被提出并且得到了良好的应用。一般说来，财务困境的定量研究方法一般可
+以分为统计类和人工智能方法类。统计类的研究方法主要有：单变量分析、多变量分析、多元回归、生存分析等。人工智能方法主要有人工神经网络、支持向量机、朴素贝叶斯、分类
+与回归树、集成方法等。
+\end_layout
+
+\begin_layout Subsection
+比率分析
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fitzpatrick1932comparison"
+
+\end_inset
+
+首次采用财务比率作为预测方法, 选取 19 家经营企业作为样本,依据单个财务比率将样本 划分为破产和非破产两组,测试结果净利润/股东权益和 股东权益/负债,这两
+个比率判别能力最高。
+\end_layout
+
+\begin_layout Subsection
+单变量分析
+\end_layout
+
+\begin_layout Standard
+学者
+\begin_inset CommandInset citation
+LatexCommand cite
+key "beaver1966financial"
+
+\end_inset
+
+首次采用统计方法建立了单变量财务预警模型。
+\end_layout
+
+\begin_layout Subsection
+多变量分析
+\end_layout
+
+\begin_layout Standard
+将多变量分析技术首次应用于财务危机预警的是
+\begin_inset CommandInset citation
+LatexCommand cite
+key "altman1968financial"
+
+\end_inset
+
+,他对公司进行分组：财务困境公司和财务健康公司。在假设两组中的自变量服从多元正态分布，协方差矩相等，但均值不同的条件下，当组间方差与组内方差之比达到最大时，可以
+得到模型如下：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{i}=a_{0}+a_{1}x_{1}+a_{2}x_{2}+\cdots+a_{n}x_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+对于任意一家公司
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$i$
+\end_layout
+
+\end_inset
+
+,其特征可以用
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n$
+\end_layout
+
+\end_inset
+
+个独立的财务变量来表示。通过计算
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Z_i$
+\end_layout
+
+\end_inset
+
+的值，并且和临界值比较(通过组内公司数目和错误分组成本计算出来)，就可以判断该公司是否陷入财务困境。
+\end_layout
+
+\begin_layout Subsection
+ZETA 模型
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "altman1977zeta"
+
+\end_inset
+
+提出了 ZETA 模型，这是对原始 Z 模型的扩展。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textrm{ZETA}=aX_{1}+bX_{2}+cX_{3}+dX_{4}+eX_{5}+fX_{6}+gX_{7}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Altman 采用了收益稳定性、总资产、偿债能力、整体收益率、累计收益率、资产折现率和资 本化程度 7 个变量指标,对模型进行改良。改良后的模型对破产长期预测准
+确率有所提高。
+\end_layout
+
+\begin_layout Subsection
+Probit 多元概率比财务预警模型
+\end_layout
+
+\begin_layout Standard
+该模型由Zmijewsk(i 1980)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+todo:这里需要添加引用
+\end_layout
+
+\end_inset
+
+建立了 Probit 多元概率比模型,假设企业样本服从标准正态分布,企业破产概率为 p 且可用财务指标线性解释,通过极大似然函数求参数,根据下列公式求破产概率
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textrm{P}=\int_{-\infty}^{a+bx}\frac{1}{\sqrt{2\pi}}e^{-\frac{t^{2}}{2}}dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+如果
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$p$
+\end_layout
+
+\end_inset
+
+大于0.5，则企业破产的可能性大。
+\end_layout
+
+\begin_layout Subsection
+Logistic 模型
+\end_layout
+
+\begin_layout Standard
+Logistic 函数又称为增长函数。其模型如下：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textrm{ln}\frac{p}{1-p}=a+bx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$p$
+\end_layout
+
+\end_inset
+
+为概率，该模型假定
+\begin_inset Formula $\textrm{ln}\frac{p}{1-p}$
+\end_inset
+
+可以由财务比率线性解释。如果涉及多变量，则可以由
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z=b_{0}+b_{1}x_{1}+\cdots+b_{n}x_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+取代
+\begin_inset Formula $a+bx$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Subsection
+生存分析法
+\end_layout
+
+\begin_layout Standard
+生存分析假定财务健康和财务困境的公司都来自同样的总体。公司破产的风险是通 过计算每家公司的生存时间来衡量的。假设
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$T$
+\end_layout
+
+\end_inset
+
+时间后公司就会破产,那么生存函数
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S(t)$
+\end_layout
+
+\end_inset
+
+ 就代表
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$T>t$
+\end_layout
+
+\end_inset
+
+概率,公司在
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+时间前破产的概率可以用
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F(t)$
+\end_layout
+
+\end_inset
+
+表示 :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F(t)=1-S(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+危险度函数
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$h(t)$
+\end_layout
+
+\end_inset
+
+可以由下式给出：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h(t)=\frac{f(t)}{S(t)}=-\frac{S^{'}(t)}{S(t)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+并且，
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h(t|x)=h_{0}exp(x^{'}\beta)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中，
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x$
+\end_layout
+
+\end_inset
+
+代表一系列财务比率的向量，
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta$
+\end_layout
+
+\end_inset
+
+代表系数向量，是由最大似然法估计的，
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$h_0$
+\end_layout
+
+\end_inset
+
+是令
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x=0$
+\end_layout
+
+\end_inset
+
+计算得到的。
+\end_layout
+
+\begin_layout Standard
+生存函数
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S(t|x)=S_{0}exp(\beta^{'}x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中，
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{0}(t)=exp\bigg[-\int_{0}^{t}h_{0}(u)du\bigg]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+神经网络
+\end_layout
+
+\begin_layout Section
+DEA
+\end_layout
+
+\begin_layout Standard
+数据包络分析 (Data Envelopment Aanalysis) 是一种评价决策单元相对效率的非参数方法，于1978年由Charnes，Cooper
+ 和 Rhodes 首次提出。由于其可以处理多个输出与输入变量，自该方法提出以来，国内外许多学者对其进行了大量研究。
+\end_layout
+
+\begin_layout Subsection
+SBM模型
+\end_layout
+
+\begin_layout Standard
+基于松弛变量的DEA模型(Slack-based Model)是由Tone(2011)年建立的。与传统的输入导向或者输出导向的模型不同，SBM将两种导向融合到一
+起。与传统模型相比，SBM模型得出的结果有更好的区分度。
+\end_layout
+
+\begin_layout Standard
+假设有
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n$
+\end_layout
+
+\end_inset
+
+个决策单元，每个决策单元具有
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$m$
+\end_layout
+
+\end_inset
+
+个投入与
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$s$
+\end_layout
+
+\end_inset
+
+个产出。设第
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$j$
+\end_layout
+
+\end_inset
+
+个决策单元（
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$DMU_j,j=1,2,
+\backslash
+cdots,n$
+\end_layout
+
+\end_inset
+
+）的第
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$i$
+\end_layout
+
+\end_inset
+
+个投入为
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x_{ij}$
+\end_layout
+
+\end_inset
+
+，第
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$r$
+\end_layout
+
+\end_inset
+
+个产出为
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$y_{rj}$
+\end_layout
+
+\end_inset
+
+。则SBM模型如下：
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\min\; & \rho=\frac{1-(1/m)\sum_{i=1}^{m}s_{i}^{-}/x_{io}}{1+(1/s)\sum_{r=1}^{s}s_{r}^{+}/y_{ro}}\\
+\textrm{s.t.}\; & \mathbf{x_{o}}=\mathbf{X\lambda}+\mathbf{s^{-}}\\
+ & \mathbf{y_{o}}=\mathbf{Y\lambda}+\mathbf{s^{+}}\\
+ & \mathbf{\lambda}\geq\mathbf{0},\mathbf{s^{-}}\geq\mathbf{0},\mathbf{s^{+}}\geq\mathbf{0}
+\end{aligned}
+\label{eq:sbm}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S^{-}$
+\end_layout
+
+\end_inset
+
+、
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S^{+}$
+\end_layout
+
+\end_inset
+
+分别对应于投入产出的松弛变量。模型(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sbm"
+
+\end_inset
+
+)是一个分式规划，通过 Charnes-Cooper 变换，即令
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t=\frac{1}{1+\frac{1}{s}\sum_{r=1}^{s}\frac{S_{ro}^{+}}{y_{ro}}},S^{-}=ts^{-},S=ts^{+},\Lambda=t\lambda
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+可以得到一个线性规划：
+\begin_inset Formula 
+\begin{align}
+\min\;\tau=t-\frac{1}{m}\sum_{i=1}^{m}\frac{S_{i}^{-}}{x_{io}}\label{eq:linearsbm}\\
+s.t.\;1=t+\frac{1}{s}\sum_{r=1}^{s}\frac{S_{r}^{+}}{y_{ro}}\nonumber \\
+tx_{o}=X\Lambda+S^{-}\nonumber \\
+ty_{o}=Y\Lambda-S^{+}\nonumber \\
+\Lambda\geq0,S^{-}\geq0,S^{+}\geq0,t\gneq0\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+考查
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sbm"
+
+\end_inset
+
+的目标函数，易知，
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0\leq\frac{1}{m}\sum_{i=1}^{m}\frac{s_{i}^{-}}{x_{io}}\leq1\qquad\frac{1}{s}\sum_{r=1}^{s}\frac{s_{r}^{+}}{y_{ro}}\geq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+从而
+\begin_inset Formula $0\leq\rho\leq1$
+\end_inset
+
+,且易知当且仅当
+\begin_inset Formula $s_{i}^{-}$
+\end_inset
+
+和
+\begin_inset Formula $s_{r}^{+}$
+\end_inset
+
+全为0时，
+\begin_inset Formula $\rho=1$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Standard
+一般来说，DEA模型要求输入输出全为正数，然而实际生活中却往往遇到负的产出，比如利润等。为了解决这一问题，（Tone 2004，Düzakin,E.,Düzaki
+n,Hatice,2007）提出了一个解决方案。假设
+\begin_inset Formula $y_{ro}<0$
+\end_inset
+
+,可以做一个如下变换：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\overline{y}_{r}^{+} & =\textrm{Max}_{j=1,2,...n.}\{y_{rj}|y_{rj}>0\}\\
+\underline{y}_{r}^{-} & =\textrm{Min}_{j=1,2,...n.}\{y_{rj}|y_{rj}>0\}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+目标函数中的
+\begin_inset Formula $\ensuremath{s_{r}^{+}/y_{ro}}$
+\end_inset
+
+按照如下被替换：如果
+\begin_inset Formula $y_{ro}<0$
+\end_inset
+
+,且
+\begin_inset Formula $\overline{y}_{r}^{+}>\underline{y}_{r}^{+}$
+\end_inset
+
+，那么它被替换为：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s_{r}^{+}/\frac{\underline{y}_{r}^{+}(\overline{y}_{r}^{+}-\underline{y}_{r}^{+})}{\overline{y}_{r}^{+}-y_{ro}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+注意，约束条件中的
+\begin_inset Formula $y_{ro}$
+\end_inset
+
+没有被替换。经过这样的变换后，相当于把所有负的产出变成正的产出了，且它们都比原来最小的正产出要小，原来的产出越负，转换后的正值也越小。这样就可以用DEA来处理。
+\end_layout
+
+\begin_layout Section
+变量选择
+\end_layout
+
+\begin_layout Section
+SVM
+\end_layout
+
+\begin_layout Section
+随机森林
+\end_layout
+
+\end_body
+\end_document

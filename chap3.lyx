@@ -1,0 +1,1062 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass ctex-book
+\use_default_options true
+\master master.lyx
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+财务预警模型指标体系的建立
+\end_layout
+
+\begin_layout Section
+计算DEA效率值的变量选择
+\end_layout
+
+\begin_layout Standard
+DEA方法可以用来计算多输入、多产出的决策单元的相对效率，这样一来，输入产出的指标选择就成为关键。不同的输入、产出选择可能导致不同的结果。本文的变量选择参考了
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xu2009small"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DEA效率值的变量
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="0pt">
+<column alignment="left" valignment="middle" width="0pt">
+<column alignment="left" valignment="middle" width="3cm">
+<column alignment="left" valignment="middle" width="5cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+变量类型
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+变量代码
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+变量名称
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+变量说明
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+输入变量
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A001100000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+流动资产合计
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+流动资产各项目之合计，金融企业不计算此项目。1990年起使用
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A001000000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+资产总计
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+资产各项目之总计。1990年起使用
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A002100000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+流动负债合计
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+流动负债各项目之合计。1990年起使用
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A002000000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+负债合计
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+负债各项目之合计。1990年起使用
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B001201000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+营业成本
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+企业确认的营业成本。
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+输出变量
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B001101000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+营业收入
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+企业经营过程中确认的营业收入。
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B001300000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+营业利润
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+与经营业务有关的利润。1990年起使用
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B001000000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+利润总额
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+公司实现的利润总额。1990年起使用
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C001000000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+经营活动产生的现金流量净额
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+经营活动产生的现金流入与经营活动产生的现金流出之差额。
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+财务困境变量选择
+\end_layout
+
+\begin_layout Standard
+企业陷入财务困境的原因十分复杂，其可能受到国情、全球经济、自身管理等各方面因素的影响。这种影响的结果导致企业的财务状况因素错综复杂。在建立财务困境预警模型时，一
+个重要的方面就是选择进入模型的预测变量。
+\end_layout
+
+\begin_layout Standard
+大多数文章多根据作者的经验，预先选定一些变量，然后利用这些变量来预测一个企业是否会陷入财务困境。本文则假设研究者无相关经验，从许多财务变量中，利用随机森林模型，
+选择对结果最重要的几个变量。这样的好处是：容易上手，即使研究者或者模型使用者无相关经验，仍然可以使用该模型；二是可以避免人为因素的干扰。
+\end_layout
+
+\begin_layout Standard
+本文所用的财务数据来自CSMAR数据库，该数据库采用八个方面共计150个指标来刻画上市公司财务状况。具体构成见下表
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tbl:csmar"
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CSMAR 总体数据库结构
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tbl:csmar"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="2">
+<features rotate="0" tabularvalignment="top">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+财务能力
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+指标数目(个)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+短期偿债能力
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+运营能力
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+长期偿债能力
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+盈利能力
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+风险水平
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+股东获利能力
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+现金流量能力
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+发展能力
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+在上面的150个指标中，有些指标有严重的数据缺失，本文排除了严重缺失的指标，对缺失小于5%的指标进行了最近邻插补。
+\end_layout
+
+\begin_layout Standard
+由于同类财务比率内部和外部之间存在种种复杂的关系，很多指标之间相关度很高，本文去掉了一些接近零方差的变量，同时，由于一些财务变量和用来计算 DEA
+ 效率值的变量线性相关，本文也把这些财务变量一并去掉。最后，本文把存在多重共线性的指标一并去除。
+\end_layout
+
+\begin_layout Standard
+经过初选后，我们得到了47个财务指标、1个企业相对效率值和一个企业是否是ST 企业的指标。指标名称和解释详见附录。
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+todo:这里附录加个表
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+对于财务预警模型来说，48个指标还是太多了。本文运用递归特征消除方法(Recursive feature elimination)，对指标的的重要性进行排序，然
+后从中选取那些对预测影响最大的指标进入模型。
+\end_layout
+
+\begin_layout Standard
+递归特征消除法是一种后向选择法，首先，该算法把所有预测变量加入模型，然后计算每一个变量的重要性排序。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Recursive feature elimination
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+运用所有的预测变量来训练模型
+\end_layout
+
+\begin_layout Enumerate
+计算模型的效能
+\end_layout
+
+\begin_layout Enumerate
+计算变量重要性或者其等级排序
+\end_layout
+
+\begin_layout Enumerate
+对变量的每一个子集
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S_i,i=1 
+\backslash
+cdots S$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+保留
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S_i$
+\end_layout
+
+\end_inset
+
+中最重要的那些变量
+\end_layout
+
+\begin_layout Enumerate
+[可选]预处理数据
+\end_layout
+
+\begin_layout Enumerate
+运用
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S_i$
+\end_layout
+
+\end_inset
+
+中的变量来训练模型
+\end_layout
+
+\begin_layout Enumerate
+计算模型的效能
+\end_layout
+
+\begin_layout Enumerate
+[可选]从新计算每个预测变量的重要性等级排序
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+结束
+\end_layout
+
+\begin_layout Enumerate
+在子集
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S_i$
+\end_layout
+
+\end_inset
+
+上面，计算模型效能
+\end_layout
+
+\begin_layout Enumerate
+选择合适数量的预测变量
+\end_layout
+
+\begin_layout Enumerate
+使用选出的最优变量加入模型
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+这里加入variable importance
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+卢永艳采用了均值差异检验
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/Rplot_feature_selection.pdf
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+选择最优的预测变量数目
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:feature_selection"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+由图(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:feature_selection"
+
+\end_inset
+
+)可以看出，并不是预测变量越多越好，随着变量的增多，预测精度是下降的。最优变量数目在25个。实际上，当变量数目超过10个时，再增加变量数目对预测精度提升不大(7
+2%
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+74%)。为了使得模型简介，本文选择不超过10个的变量来进行预测。
+\end_layout
+
+\begin_layout Section
+样本选择
+\end_layout
+
+\begin_layout Standard
+本文选择了2004-2013年的A股上市公司的全部样本。由于本文的目的是预测出一家公司是否会在3年后被特别处理，所选取的公司要至少有4年的记录。比如说，我们发现
+公司A在2013年被首次特别处理，那么说明它2011-2012年连续2年亏损。选取在亏损年份的数据来预测是否会被特别处理，会使得模型的说服力变弱，毕竟此时公司已
+经亏损。故为了预测2013年某公司是否会被特别处理，本文选取的是2010年的数据。这样一来，可用的数据就只有2004-2010年，2011-2013年的数据没有
+被用来预测，只是取得了2011-2013年的首次被特别处理的公司代码。
+\end_layout
+
+\begin_layout Subsection
+ST 样本的选取
+\end_layout
+
+\begin_layout Standard
+由于每年的ST企业较少，一般只有几十家，而上市公司总计有上千家，存在两类(ST与非ST)企业不平衡问题。有不少及其学习算法可以设置不同权重来解决这个问题，如支持
+向量机。但是当两类样本严重不平衡时效果欠佳。本文采用的方法，是选择全部的ST企业。由于绝大多数的企业被特别处理都是因为连续2年亏损，选择全部的ST企业有其合理性
+。经过这样的操作后，2004-2010年总共选择了234家ST企业。
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+这里给出图形，变量选择图形
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+非ST样本的选取
+\end_layout
+
+\begin_layout Standard
+为了方便，本文在搜集到的2004-2010年的数据中，剔除ST企业和数据严重缺失的企业，将所剩的企业全体作为非 ST 企业的样本。样本总数为10641个。和非S
+T企业数目对比，这个样本量实在是太大了。如果使用预测准确度作为模型的评判标准，则模型倾向于把所有的ST企业全部归类成非ST 企业，这样看上去预测准确度很高(接近
+100%),但实际上这样的模型毫无用处，它无法将ST 企业区分出来。为了解决这个问题，有些研究者采用配对样本，即选取行业、规模等和 ST 公司大体一致的公司，这
+种选择有一定的合理性。本文采取的方法是简单随机抽样。选取和 ST 样本等量的非 ST 样本。为了不受偶然因素影响，本文重复了20次样本选择，然后求其平均的预测准
+确度，以此来评价模型的优劣。
+\end_layout
+
+\end_body
+\end_document

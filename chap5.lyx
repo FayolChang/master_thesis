@@ -1,0 +1,982 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass ctex-book
+\use_default_options true
+\master master.lyx
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+预测工具
+\end_layout
+
+\begin_layout Section
+SVM基本原理及模型介绍
+\end_layout
+
+\begin_layout Subsection
+SVM基本概念与原理
+\end_layout
+
+\begin_layout Standard
+支持向量机（Support Vector Machine，SVM）是一种监督式学习的分类算法，是基于统计学习理论（SLT）的一种新的机器学习方法，广泛应用于统计
+分类以及回归分析中，具有较完备的理论基础和较好的学习性能，能很好地解决小样本、非线性、高维数和局部极小点等实际问题。它属于一般化线性分类器，能够同时最小化经验误
+差与最大化几何边缘区，因此支持向量机也被称为最大边缘区分类器，这正是支持向量机的优点所在。
+\end_layout
+
+\begin_layout Subsubsection
+基本原理
+\end_layout
+
+\begin_layout Standard
+首先考虑两类数据的分类问题，数据点用x表示（x为一个n维向量），类别用y表示，可以取1或者-1，即分别表示两个不同的类。一个线性分类器就是要在n维的数据空间中找
+到一个超平面（在二维平面中，最优超平面是一条直线），其方程可以表示为： 
+\begin_inset Formula 
+\[
+W^{T}x+b=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement htbp
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename figures/pasted1.png
+	width 50text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+支持向量与最大化最优超平面周围空间
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:svm-margin"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics{./figure/pasted1.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+图
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:svm-margin"
+
+\end_inset
+
+中，蓝色和绿色分别表示两种不同的类，可以找到很多直线将这两类区分开（如上图中灰色的直线），SVM要做的就是找到一个最优超平面（如上图中红色的直线），将最优超平面
+（红色直线）左右平行移动，直至分别碰到蓝色和绿色的点，形成与最优超平面平行的直线，这条直线称之为支持超平面，这些点称之为支持向量，SVM要做的就是使支持超平面之
+间的空间最大化。 可以看出，支持向量是最难区分的点，因为一旦支持向量移动，那么分离超平面的位置就会移动，如图
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:svm-move"
+
+\end_inset
+
+所示。
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics{pasted2}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement htbp
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename figures/pasted2.png
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+支持向量的移动
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:svm-move"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+而非支持向量移动，不会改变分离超平面的位置，如图
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nsvm-move"
+
+\end_inset
+
+所示。
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics{pasted3}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement htbp
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename figures/pasted3.png
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+非支持向量的移动
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nsvm-move"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+由支持向量和最优超平面共同作用的支持超平面可做如下定义：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+W^{T}x+b=1,\text{或\;}W^{T}x=-1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics{pasted4}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement htbp
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename figures/pasted4.png
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+最优分离超平面、支持超平面方程
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:optimal-margin"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+支持超平面H1，H2： 
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+W^{T}x+b=1 & for\;y_{i}=1\\
+W^{T}x+b=-1 & for\;y_{i}=-1
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+支持向量：
+\end_layout
+
+\begin_layout Standard
+支持超平面H1、H2上的点
+\end_layout
+
+\begin_layout Standard
+d+ =H至正点的最短距离
+\end_layout
+
+\begin_layout Standard
+d- =H至负点的最短距离 =分离超平面确定的空间
+\end_layout
+
+\begin_layout Standard
+SVM目标是使得H1与H2之间的距离最大。首先考虑H与H1之间的距离为：
+\begin_inset Formula $\frac{|w\cdot x+b|}{\|w\|}=\frac{1}{\|w\|}$
+\end_inset
+
+,所以
+\begin_inset Formula $H_{1}$
+\end_inset
+
+与
+\begin_inset Formula $H_{2}$
+\end_inset
+
+的距离为：
+\begin_inset Formula $\frac{2}{\|w\|}$
+\end_inset
+
+,为使
+\begin_inset Formula $\frac{2}{\|w\|}$
+\end_inset
+
+最大，应使
+\begin_inset Formula $\|w\|$
+\end_inset
+
+最小，伴随条件为
+\begin_inset Formula $H_{1}$
+\end_inset
+
+与
+\begin_inset Formula $H_{2}$
+\end_inset
+
+之间没有其他点。即： 
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+W^{T}x_{i}+b\geq+1 & for\;y_{i}=+1\\
+W^{T}x_{i}+b\leq-1 & for\;y_{i}=-1
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+统一表述为： 
+\begin_inset Formula 
+\[
+y_{i}(W^{T}x_{i}+b)\geq1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+因此，构建规划问题为：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{alignedat}{2}\min & \frac{1}{2}\|\omega\|^{2}\\
+\mathrm{s.t.} & y_{i}(wx_{i}+b) & \geq1
+\end{alignedat}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+软边缘（Soft Margin）
+\end_layout
+
+\begin_layout Standard
+在最开始讨论支持向量机的时候，假定训练样本点是线性可分的，也就是可以找到一个可行的超平面将数据完全分开。但对于某些情况，比如数据本身是线性结构，但数据有噪音，对
+于这些偏离正常位置很远的点，我们称之为outlier。在原来的SVM模型里，outliers的存在可能造成很大的影响，因为超平面本身就是由少数几个支持向量组成的
+，此时并不需要运用核函数方法进行SVM推广找寻超平面，而是可以直接将这些异常点排除。例如图：
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics{"D:/Downloads/运筹学作业/支持向量机：Outliers_files/Optimal-Hyper-Plane-2.pn
+g"}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement htbp
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename figures/Optimal-Hyper-Plane-2.png
+	width 50text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+outlier影响下的超平面变化
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:outlier"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+如上图(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:outlier"
+
+\end_inset
+
+)所示，用黑圈表示的蓝色点是一个outlier，它偏离了自己原本所在的空间，导致超平面变成黑色虚线所示，边缘距离也变窄了，假如该outlier再往右上移动，我们
+将无法构造超平面。 为了处理这种情况，SVM允许训练样本在一定程度上偏离超平面，即令超平面变形，这时outliers位于其他空间中。SVM约束条件由原先的：
+ 
+\begin_inset Formula 
+\[
+y_{i}(w^{T}x_{i}+b)\geq1,i=1,...,n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+现在变成： 
+\begin_inset Formula 
+\[
+y_{i}(w^{T}x_{i}+b)\geq1-\xi_{i},i=1,...,n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中
+\begin_inset Formula $\xi_{i}$
+\end_inset
+
+成为松弛变量，对应的训练样本
+\begin_inset Formula $x_{i}$
+\end_inset
+
+允许偏离的最大距离，并给定
+\begin_inset Formula $\xi_{i}$
+\end_inset
+
+的范围： 
+\begin_inset Formula 
+\[
+min\frac{1}{2}\left\Vert w\right\Vert ^{2}+C\sum_{i=1}^{n}\xi_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s.t.\:y(w^{T}x_{i}+b)\geq1-\xi_{i},i=1,...,n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xi_{i}\geq1-\xi_{i},i=1,...,n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中C是一个事先规定的常数，称为惩罚因子，它表征了对错误的惩罚程度。用于控制目标函数中“距离最大的超平面”和保证“训练样本偏差量最小”之间的权重。
+\end_layout
+
+\begin_layout Subsection
+核函数
+\end_layout
+
+\begin_layout Standard
+训练集为非线性时，通过一个非线性函数
+\begin_inset Formula $\Phi(.)$
+\end_inset
+
+将训练集数据x映射到一个高维线性特征空间，在这个维数可能为无穷大的线性空间中构造最优分类超平面，并得到分类器的决策函数。因此，在非线性情况，分类的超平面为:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\omega\cdot\phi(x)+b=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+决策函数为
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overset{\sim}{f}(x)=\mathrm{sign}[\omega\cdot\phi(x)+b]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+最优分类超平面问题描述为
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\min_{\omega,b,\xi}\frac{1}{2}\omega^{T}\omega+C\sum_{i=1}\xi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{alignat}{1}
+\min_{\omega,b,\xi} & \quad\frac{1}{2}\omega^{T}\omega+C\sum_{i=1}^{l}\xi\\
+\mathrm{st.} & \quad y_{i}(\mathbf{\omega}^{T}\phi(\mathbf{X}_{i})+b)\geq1-\xi_{i}\\
+ & \quad\xi_{i}\geq0,i=1,\cdots,l
+\end{alignat}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其对偶问题
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{alignat}{1}
+\max & \quad L_{d}=\sum_{i=1}^{l}\alpha_{i}-\frac{1}{2}\sum_{i=1}^{l}\sum_{j=1}^{l}\alpha_{i}\alpha_{j}y_{i}y_{j}\phi(\mathbf{X}_{i})\cdot\phi(\mathbf{X}_{j})\nonumber \\
+ & =\sum_{i=1}^{l}\alpha_{i}-\frac{1}{2}\sum_{i=1}^{l}\sum_{j=1}^{l}\alpha_{i}\alpha_{j}y_{i}y_{j}K(\mathbf{X}_{i},\mathbf{X}_{j})\\
+\mathrm{s.t.} & \quad0\leq\alpha_{i}\leq C\\
+ & \quad\sum_{i=1}^{l}\alpha_{i}y_{i}=0
+\end{alignat}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中
+\begin_inset Formula $K(\mathbf{X}_{i},\mathbf{X}_{j})=\phi(\mathbf{X}_{i})\cdot\phi(\mathbf{X}_{j})$
+\end_inset
+
+称为核函数。
+\end_layout
+
+\begin_layout Standard
+尽管通过非线性函数将样本数据映射到具有高维甚至于无穷多维的特征空间，并在特征空间中构造最优分类超平面，但在求解最优化为题和计算决策函数时并不需要显式计算该非线性
+函数，而只需计算核函数，从而避免特征维数灾难问题。
+\end_layout
+
+\begin_layout Standard
+核函数的选择必须满足Merce条件，常见的核函数有 
+\end_layout
+
+\begin_layout Itemize
+线性函数
+\begin_inset Formula $K(\mathbf{X}_{i},\mathbf{X})=\langle\mathbf{X}_{i},\mathbf{X}\rangle$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+多项式函数
+\begin_inset Formula $K(\mathbf{X}_{i},\mathbf{X})=\big(\langle\mathbf{X}_{i},\mathbf{X}\rangle+1\big)^{d}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+径向基函数
+\begin_inset Formula $K(\mathbf{X}_{i},\mathbf{X})=\mathrm{exp}(\frac{-\|\mathbf{X}_{i}-\mathbf{X}\|}{\sigma^{2}})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+多层感知器函数
+\begin_inset Formula $K(\mathbf{X}_{i},\mathbf{X})=\mathrm{tanh}(k\langle\mathbf{X}_{i},\mathbf{X}\rangle+\theta)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+下面通过一个例子来理解一下如何利用空间的维度变得更高来帮助我们分类的：
+\end_layout
+
+\begin_layout Standard
+下图是一个典型的线性不可分的情况
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics{D:/Downloads/运筹学作业/2-svm_files/201105022056079965}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement htbp
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename figures/201105022056079965.png
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+线性不可分
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:impartibility"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+但是当我们把这两个类似于椭圆形的点映射到一个高维空间后，映射函数为：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z_{1}=x_{1}^{2},z_{2}=x_{2}^{2},z_{3}=x_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+用这个函数可以将上图的平面中的点映射到一个三维空间
+\begin_inset Formula $\langle z_{1},z_{2},z_{3}\rangle$
+\end_inset
+
+，并且对映射后的坐标加以旋转之后就可以得到一个线性可分的点集了。
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+神经网络
+\end_layout
+
+\begin_layout Section
+Boosting
+\end_layout
+
+\begin_layout Section
+Bagging
+\end_layout
+
+\begin_layout Section
+Cart
+\end_layout
+
+\begin_layout Section
+朴素贝叶斯
+\end_layout
+
+\begin_layout Section
+贝叶斯网
+\end_layout
+
+\begin_layout Section
+随机森林
+\end_layout
+
+\end_body
+\end_document
